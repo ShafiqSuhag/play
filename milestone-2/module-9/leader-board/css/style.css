@@ -191,6 +191,7 @@ footer{
         width: 100%;
         padding: 0 10px;
         margin: 0;
+        margin-bottom: 21px;
     }
     .top-player{
         display: grid;
@@ -221,10 +222,10 @@ footer{
     .blog-info, .blog-info a{
         font-size: 12px;
     }
-
-
-    /* temporary disable */
+    /* course container */
     .course-container{
-        display: none;
+        flex-direction: column;
     }
+
+    
 }
