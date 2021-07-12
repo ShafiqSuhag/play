@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;700&family=Roboto&display=swap');
 
 body{
+    margin: 0;
+    padding: 0;
     font-family: 'Poppins', sans-serif;
     background-color: #F3F1FF;
 }
@@ -13,17 +15,17 @@ main{
     flex-direction: column;
 }
 
-/* ---------------
-    section
------------------*/
+/* --------------- section -----------------*/
 section{
-    /* padding-top: 33px; */
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 42px;
+    
+    
     width: 870px;
     background-color: #fff;
     border-radius: 5px;
+
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 42px;
     margin-bottom: 21px;
 }
 .toppalyer-section-title{
@@ -122,8 +124,15 @@ COURSE STYLES
     display: flex;
     column-gap: 25px;
 }
-
+.course-item{
+    /* border:1px solid black; */
+    border-radius: 20px;
+    box-shadow: 0 5px 13px rgba(0, 0, 0, 0.05);
+    /* drop-shadow(0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05)); */
+    padding :13px
+}
 .course-thumbnail img{
+    border-radius: 20px;
     width: 100%;
 }
 /* course author */
@@ -142,6 +151,7 @@ COURSE STYLES
     font-size: 14px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .rating{
     font-size: 12px;
@@ -163,9 +173,35 @@ COURSE STYLES
     border-radius: 14px;
     padding: 4px 10px;
 }
+
+
+
+
 /* responsive styles */
 @media screen and (max-width:600px) {
+  
+   
+    main{
+        padding: 20px;
+    }
     section{
-        background-color: red;
+        width: 100%;
+        padding: 0 10px;
+        margin: 0;
+    }
+    .top-player{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        row-gap: 29px;
+    }
+
+    .player h3 {
+        /* font-size: 13px; */
+        padding-left: 5%;
+        font-size: 0.7em;
+    }
+    /* temporary disable */
+    .blog-container ,.blog-container, .course-container{
+        display: none;
     }
 }
