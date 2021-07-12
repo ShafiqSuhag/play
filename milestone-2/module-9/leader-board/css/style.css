@@ -174,7 +174,10 @@ COURSE STYLES
     padding: 4px 10px;
 }
 
-
+footer{
+    font-size: 12px;
+    text-align: center;
+}
 
 
 /* responsive styles */
