@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID</title>
+    <style>
+        .grid-container{
+            display: grid;
+            /* grid-template-rows: 200px 200px; */
+            grid-gap: 0  5px; /* gap between width & height  */
+            grid-template-columns: repeat(6,1fr);   
+            /* fraction the columns equally */
+            /* grid-template-columns: repeat(6,100px); */
+            /* grid-template-columns: 200px 200px 200px 200px; */
+        }
+        .grid-cell{
+            border: 1px solid lime;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-cell">cell-1 ame tomoy valobase</div>
+        <div class="grid-cell">cell-2</div>
+        <div class="grid-cell">cell-3</div>
+        <div class="grid-cell">cell-4</div>
+        <div class="grid-cell">cell-5</div>
+        <div class="grid-cell">cell-6</div>
+        <div class="grid-cell">cell-7</div>
+        <div class="grid-cell">cell-8</div>
+        <div class="grid-cell">cell-9</div>
+        <div class="grid-cell">cell-10</div>
+        <div class="grid-cell">cell-11</div>
+        <div class="grid-cell">cell-12</div>
+    </div>
+</body>
+</html>

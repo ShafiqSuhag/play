@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            /* justify-content: center;
+            align-items: center; */
+            width: 100%;
+            height: 100vh;
+        }
+        /* main{
+            position: absolute;
+            
+            border: 20px solid black;
+            background-color: blue;
+        } */
+        .box_container{
+            position: relative;
+            background-color: rgba(189, 93, 93, 0.288);
+            /* opacity: 0.2; */
+            width: 200px;
+            height: 400px;
+             transform:  rotate(-45deg) scale(1) skew(22deg);
+            transition: 1s;
+           
+        }
+        .box_container:hover{
+            box-shadow: 0 0 100px;
+           
+        }
+        
+        .mobile{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+           background-color: red; 
+           /* display: none; */
+           
+        }
+        .box_container:hover #mobile-1{
+            transition: 1s ease-in-out;
+            opacity: 0.1;
+            /* background-color: blue !important; */
+            transform: translate(60px,-60px);
+        }
+        .box_container:hover #mobile-2{
+            transition: 1s ease-in-out;
+            opacity: 0.6;
+            /* background-color: green !important; */
+            transform: translate(40px,-40px);
+        }
+        .box_container:hover #mobile-3{
+            transition: 1s ease-in-out;
+            opacity: 0.4;
+            /* background-color: blue !important; */
+            transform: translate(20px,-20px);
+        }
+        .box{
+            width: 200px;
+            height: 100px;
+            background-color: black;
+            
+            /* transition: 2s; */
+        }
+        .box:hover{
+            transform:rotate(45deg);
+            width: 400px;
+            height: 200px;
+            transition: width 5s, height 5s, transform 2s;
+            
+            /* transform: translateX(200px) */
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="box"></div>
+
+
+       <div class="box_container">
+            <div class="mobile" id="mobile-3"></div>
+            <div class="mobile" id="mobile-2"></div>
+            <div class="mobile" id="mobile-1"></div>
+        </div> 
+    </main>
+    
+</body>
+</html>

@@ -1,0 +1,60 @@
+
+        .lesson_box{
+            margin-left: 20px;
+            margin-top: 10px;
+            border-right: 5px solid blue;
+            /* border-bottom: 5px solid whitesmoke; */
+            background-color: whitesmoke;
+            padding: 10px
+        }
+        .lesson_box li{
+            font-size: 16px;
+        }
+        .topic{
+            border-left: 3px solid purple;
+            padding-left: 10px;
+            font-size: 20px;
+            font-weight: 600;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .horizonal_ruler{
+            height: 8px;
+            background-color: rgb(140 0 255);
+            border-radius: 0 0 6px 6px;
+        }
+        .head_day{
+            height: 300px;
+            width: 360px;
+            font-size: 100px;
+            background-color: blue;
+            text-align: center;
+            align-items: center;
+            display: inline-block;
+            padding-top: 200px;
+            padding-bottom: 0;
+            border-radius: 10px;
+            color: white;
+            font-family: -webkit-pictograph;
+            /* border-right: 10px solid whitesmoke; */
+        }
+        .head_title{
+           
+            display: inline-block;
+    width: 45%;
+    /* background-color: #fffa4d2e; */
+    font-size: 60px;
+    text-align: right;
+    font-style: italic;
+    
+    
+    
+            
+        }
+        .head_title p{
+            font-family: -webkit-body;
+            color: rgb(93, 93, 114);
+            border-right: 20px solid whitesmoke;
+    /* width: 77%; */
+    padding-right: 37px;
+        }
+    
