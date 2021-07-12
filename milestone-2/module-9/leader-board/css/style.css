@@ -183,7 +183,7 @@ footer{
 /* responsive styles */
 @media screen and (max-width:600px) {
   
-   
+   /* top player */
     main{
         padding: 20px;
     }
@@ -199,12 +199,32 @@ footer{
     }
 
     .player h3 {
-        /* font-size: 13px; */
         padding-left: 5%;
         font-size: 0.7em;
     }
+
+    /* blog responsive  */
+    .blog-section-title {
+        padding-left: 5%;
+        font-size: 24px;
+    }
+    .blog-item{
+        align-items: center;
+    }
+    .blog-posts{
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+    .blog-title{
+        font-size: 14px;
+    }
+    .blog-info, .blog-info a{
+        font-size: 12px;
+    }
+
+
     /* temporary disable */
-    .blog-container ,.blog-container, .course-container{
+    .course-container{
         display: none;
     }
 }
